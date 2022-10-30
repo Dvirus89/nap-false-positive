@@ -287,7 +287,7 @@
 															<?php 
 																echo "<table style='width:50%'class='table table-bordered table-striped table-violation'><tr bgcolor='white'><td><b>Violation Name</b></td><td><b>Status</b></td><tr>";
 																$json_viol = json_decode($json_data["json_log"], true); 
-																foreach ($json_viol["viloations"] as $vil)
+																foreach ($json_viol["violations"] as $vil)
 																{
 																	echo '<tr> <td>' . $vil["violation"]["name"] . "</td>";
 																	if ($vil["enforcementState"]["isBlocked"])
